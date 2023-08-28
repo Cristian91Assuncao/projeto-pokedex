@@ -24,7 +24,7 @@ function Header() {
                 <Button variant="header" onClick={()=>goToPokedexPage(navigate)} >Pokédex</Button>
               </HeaderStyle>
           );
-        case "/pokedexPage":
+        case "/pokedex":
           return (
             <HeaderStyle>
                 <div>
@@ -56,8 +56,7 @@ function Header() {
         <>
           {location.pathname === '/goToPokedexPage' &&
             <HeaderStyle>
-              {renderHeader()}
-              {/* <div>
+              <div>
                 <div>
                 <Button variant="link" onClick={()=>goToPokemonsListPage(navigate)} >Voltar a lista</Button>
                 </div>
@@ -85,7 +84,7 @@ function Header() {
                 </div>
                 <img src={logo} alt="" />
                 <button>ADD ou EXCLUI</button>
-              </div> */}
+              </div>
             </HeaderStyle>
 
           }
